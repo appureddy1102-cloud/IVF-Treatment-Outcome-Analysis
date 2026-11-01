@@ -1,0 +1,1105 @@
+{
+  "counts": {
+    "patients_clean": 3897,
+    "cycles_clean": 5277,
+    "transfers_clean": 4672,
+    "no_transfer_cycles": 605,
+    "embryos_clean": 16928
+  },
+  "demographics": {
+    "Age": {
+      "mean": 33.92,
+      "sd": 4.56,
+      "median": 34.0,
+      "q1": 31.0,
+      "q3": 37.0,
+      "iqr": 6.0,
+      "min": 22.0,
+      "max": 45.0,
+      "skewness": -0.034
+    },
+    "BMI": {
+      "mean": 25.06,
+      "sd": 4.32,
+      "median": 24.6,
+      "q1": 22.1,
+      "q3": 27.6,
+      "iqr": 5.5,
+      "min": 17.4,
+      "max": 42.5,
+      "skewness": 0.602
+    },
+    "Infertility_Duration_Years": {
+      "mean": 3.47,
+      "sd": 2.07,
+      "median": 3.1,
+      "q1": 1.9,
+      "q3": 4.6,
+      "iqr": 2.7,
+      "min": 0.5,
+      "max": 14.5,
+      "skewness": 1.158
+    },
+    "Previous_IVF_Attempts": {
+      "mean": 0.77,
+      "sd": 0.92,
+      "median": 1.0,
+      "q1": 0.0,
+      "q3": 1.0,
+      "iqr": 1.0,
+      "min": 0.0,
+      "max": 5.0,
+      "skewness": 1.271
+    },
+    "AMH_Level": {
+      "mean": 3.49,
+      "sd": 2.17,
+      "median": 2.98,
+      "q1": 1.95,
+      "q3": 4.45,
+      "iqr": 2.5,
+      "min": 0.29,
+      "max": 11.5,
+      "skewness": 1.385
+    },
+    "FSH_Level": {
+      "mean": 8.2,
+      "sd": 2.12,
+      "median": 8.23,
+      "q1": 6.77,
+      "q3": 9.63,
+      "iqr": 2.86,
+      "min": 2.8,
+      "max": 16.01,
+      "skewness": 0.016
+    }
+  },
+  "patient_category_counts": {
+    "Age_Group": {
+      "<30": 670,
+      "30-34": 1461,
+      "35-37": 932,
+      "38-40": 533,
+      ">40": 301
+    },
+    "BMI_Category": {
+      "Normal (18.5-24.9)": 1897,
+      "Overweight (25.0-29.9)": 1306,
+      "Obese (>=30.0)": 512,
+      "Underweight (<18.5)": 182
+    },
+    "Infertility_Type": {
+      "Primary": 2597,
+      "Secondary": 1300
+    },
+    "Medical_History_Category": {
+      "Male Factor": 983,
+      "Unexplained Infertility": 715,
+      "Ovulatory Dysfunction / PCOS": 639,
+      "Tubal Factor": 549,
+      "Diminished Ovarian Reserve": 435,
+      "Endometriosis": 395,
+      "Uterine Factor": 181
+    }
+  },
+  "treatment_and_funnel": {
+    "treatment_counts": {
+      "ICSI": 2402,
+      "Conventional IVF": 1453,
+      "IVF + PGT-A": 984,
+      "Mild Stimulation IVF": 438
+    },
+    "protocol_counts": {
+      "GnRH Antagonist": 3165,
+      "GnRH Agonist Long": 1096,
+      "Mild / Minimal Stimulation": 673,
+      "Flare-Up Protocol": 343
+    },
+    "transfer_type_counts": {
+      "Frozen-Thawed Transfer": 2517,
+      "Fresh Transfer": 2155,
+      "No Transfer": 605
+    },
+    "transfer_strategy_counts": {
+      "eSET (1 Embryo)": 3437,
+      "DET (2 Embryos)": 1135,
+      "No Transfer (0)": 605,
+      "MET (3 Embryos)": 100
+    },
+    "funnel_means": {
+      "Retrieved_Oocytes_Mean": 8.94,
+      "Retrieved_Oocytes_Median": 8.0,
+      "Mature_Oocytes_Mean": 6.99,
+      "Mature_Oocytes_Median": 7.0,
+      "Fertilized_Oocytes_Mean": 5.17,
+      "Fertilized_Oocytes_Median": 5.0,
+      "Viable_Embryos_Mean": 3.21,
+      "Viable_Embryos_Median": 3.0,
+      "Mean_Maturation_Rate_Pct": 78.12,
+      "Mean_Fertilization_Rate_Pct": 74.11,
+      "Mean_Embryo_Dev_Rate_Pct": 61.51
+    }
+  },
+  "embryo_summary": {
+    "all_embryos_quality": {
+      "Excellent": 3442,
+      "Good": 5924,
+      "Fair": 5038,
+      "Poor": 2524
+    },
+    "all_embryos_day": {
+      "Day 5": 13475,
+      "Day 3": 3453
+    },
+    "day5_icm_te_implantation_pct": {
+      "A": {
+        "A": 57.5,
+        "B": 54.8,
+        "C": 33.3
+      },
+      "B": {
+        "A": 47.0,
+        "B": 46.4,
+        "C": 38.1
+      },
+      "C": {
+        "A": 43.9,
+        "B": 31.0,
+        "C": 24.0
+      }
+    }
+  },
+  "outcome_rates": {
+    "counts": {
+      "Initiated_Cycles": 5277,
+      "Embryo_Transfer_Cycles": 4672,
+      "No_Transfer_Cycles": 605,
+      "Positive_hCG": 2553,
+      "Implanted_Cycles": 2217,
+      "Clinical_Pregnancies": 2021,
+      "Live_Births": 1711
+    },
+    "per_initiated_cycle_pct": {
+      "Transfer_Completion_Rate": 88.54,
+      "Positive_hCG_Rate": 48.38,
+      "Cycle_Implantation_Proportion": 42.01,
+      "Clinical_Pregnancy_Rate": 38.3,
+      "Live_Birth_Rate": 32.42
+    },
+    "per_embryo_transfer_pct": {
+      "Positive_hCG_Rate": 54.64,
+      "Cycle_Implantation_Proportion": 47.45,
+      "Clinical_Pregnancy_Rate": 43.26,
+      "Live_Birth_Rate": 36.62
+    },
+    "stage_progression_conditional_pct": {
+      "Implantation_given_Pos_hCG": 86.84,
+      "Biochemical_Loss_given_Pos_hCG": 13.16,
+      "Clinical_Preg_given_Implantation": 91.16,
+      "Live_Birth_given_Clinical_Preg": 84.66
+    },
+    "completed_followup_sensitivity": {
+      "Completed_ET_Cycles": 4607,
+      "Live_Birth_Rate_Completed_ET_Pct": 37.14
+    }
+  },
+  "stratified_outcomes": {
+    "by_embryo_quality_et": [
+      {
+        "Best_Embryo_Quality": "Excellent",
+        "Cycles": 2324,
+        "Transfers": 2324,
+        "Implantation_per_ET_Pct": 54.78,
+        "CPR_per_ET_Pct": 49.87,
+        "LBR_per_ET_Pct": 42.04,
+        "CPR_per_Cycle_Pct": 49.87,
+        "LBR_per_Cycle_Pct": 42.04,
+        "Mean_Age": 33.07,
+        "Mean_Cost": 13896.93,
+        "Median_Cost": 13796.25,
+        "Cost_per_Live_Birth": 33056.77
+      },
+      {
+        "Best_Embryo_Quality": "Good",
+        "Cycles": 1624,
+        "Transfers": 1624,
+        "Implantation_per_ET_Pct": 44.27,
+        "CPR_per_ET_Pct": 40.39,
+        "LBR_per_ET_Pct": 34.79,
+        "CPR_per_Cycle_Pct": 40.39,
+        "LBR_per_Cycle_Pct": 34.79,
+        "Mean_Age": 34.11,
+        "Mean_Cost": 13668.01,
+        "Median_Cost": 13562.76,
+        "Cost_per_Live_Birth": 39286.46
+      },
+      {
+        "Best_Embryo_Quality": "Fair",
+        "Cycles": 546,
+        "Transfers": 546,
+        "Implantation_per_ET_Pct": 33.33,
+        "CPR_per_ET_Pct": 30.59,
+        "LBR_per_ET_Pct": 25.46,
+        "CPR_per_Cycle_Pct": 30.59,
+        "LBR_per_Cycle_Pct": 25.46,
+        "Mean_Age": 34.76,
+        "Mean_Cost": 13220.66,
+        "Median_Cost": 13150.07,
+        "Cost_per_Live_Birth": 51931.51
+      },
+      {
+        "Best_Embryo_Quality": "Poor",
+        "Cycles": 178,
+        "Transfers": 178,
+        "Implantation_per_ET_Pct": 24.16,
+        "CPR_per_ET_Pct": 21.91,
+        "LBR_per_ET_Pct": 16.85,
+        "CPR_per_Cycle_Pct": 21.91,
+        "LBR_per_Cycle_Pct": 16.85,
+        "Mean_Age": 35.6,
+        "Mean_Cost": 13048.6,
+        "Median_Cost": 13061.06,
+        "Cost_per_Live_Birth": 77421.71
+      }
+    ],
+    "by_age_group": [
+      {
+        "Age_Group": "<30",
+        "Cycles": 901,
+        "Transfers": 823,
+        "Implantation_per_ET_Pct": 54.92,
+        "CPR_per_ET_Pct": 49.94,
+        "LBR_per_ET_Pct": 44.11,
+        "CPR_per_Cycle_Pct": 45.62,
+        "LBR_per_Cycle_Pct": 40.29,
+        "Mean_Age": 27.07,
+        "Mean_Cost": 13358.73,
+        "Median_Cost": 13331.66,
+        "Cost_per_Live_Birth": 33157.62
+      },
+      {
+        "Age_Group": "30-34",
+        "Cycles": 1999,
+        "Transfers": 1821,
+        "Implantation_per_ET_Pct": 51.67,
+        "CPR_per_ET_Pct": 47.5,
+        "LBR_per_ET_Pct": 40.91,
+        "CPR_per_Cycle_Pct": 43.27,
+        "LBR_per_Cycle_Pct": 37.27,
+        "Mean_Age": 32.23,
+        "Mean_Cost": 13513.46,
+        "Median_Cost": 13495.73,
+        "Cost_per_Live_Birth": 36259.6
+      },
+      {
+        "Age_Group": "35-37",
+        "Cycles": 1279,
+        "Transfers": 1117,
+        "Implantation_per_ET_Pct": 44.14,
+        "CPR_per_ET_Pct": 40.02,
+        "LBR_per_ET_Pct": 33.66,
+        "CPR_per_Cycle_Pct": 34.95,
+        "LBR_per_Cycle_Pct": 29.4,
+        "Mean_Age": 35.93,
+        "Mean_Cost": 13351.96,
+        "Median_Cost": 13401.91,
+        "Cost_per_Live_Birth": 45417.96
+      },
+      {
+        "Age_Group": "38-40",
+        "Cycles": 709,
+        "Transfers": 595,
+        "Implantation_per_ET_Pct": 37.65,
+        "CPR_per_ET_Pct": 34.29,
+        "LBR_per_ET_Pct": 28.07,
+        "CPR_per_Cycle_Pct": 28.77,
+        "LBR_per_Cycle_Pct": 23.55,
+        "Mean_Age": 38.79,
+        "Mean_Cost": 13470.73,
+        "Median_Cost": 13501.06,
+        "Cost_per_Live_Birth": 57190.09
+      },
+      {
+        "Age_Group": ">40",
+        "Cycles": 389,
+        "Transfers": 316,
+        "Implantation_per_ET_Pct": 33.86,
+        "CPR_per_ET_Pct": 29.75,
+        "LBR_per_ET_Pct": 18.99,
+        "CPR_per_Cycle_Pct": 24.16,
+        "LBR_per_Cycle_Pct": 15.42,
+        "Mean_Age": 42.44,
+        "Mean_Cost": 13482.7,
+        "Median_Cost": 13481.8,
+        "Cost_per_Live_Birth": 87412.81
+      }
+    ],
+    "by_treatment_type": [
+      {
+        "Treatment_Type": "ICSI",
+        "Cycles": 2402,
+        "Transfers": 2157,
+        "Implantation_per_ET_Pct": 46.69,
+        "CPR_per_ET_Pct": 42.98,
+        "LBR_per_ET_Pct": 36.62,
+        "CPR_per_Cycle_Pct": 38.59,
+        "LBR_per_Cycle_Pct": 32.89,
+        "Mean_Age": 33.77,
+        "Mean_Cost": 13524.78,
+        "Median_Cost": 13631.19,
+        "Cost_per_Live_Birth": 41122.17
+      },
+      {
+        "Treatment_Type": "Conventional IVF",
+        "Cycles": 1453,
+        "Transfers": 1298,
+        "Implantation_per_ET_Pct": 44.76,
+        "CPR_per_ET_Pct": 40.14,
+        "LBR_per_ET_Pct": 33.9,
+        "CPR_per_Cycle_Pct": 35.86,
+        "LBR_per_Cycle_Pct": 30.28,
+        "Mean_Age": 33.44,
+        "Mean_Cost": 12421.75,
+        "Median_Cost": 12552.51,
+        "Cost_per_Live_Birth": 41020.0
+      },
+      {
+        "Treatment_Type": "IVF + PGT-A",
+        "Cycles": 984,
+        "Transfers": 872,
+        "Implantation_per_ET_Pct": 52.52,
+        "CPR_per_ET_Pct": 48.05,
+        "LBR_per_ET_Pct": 40.6,
+        "CPR_per_Cycle_Pct": 42.58,
+        "LBR_per_Cycle_Pct": 35.98,
+        "Mean_Age": 34.61,
+        "Mean_Cost": 16353.71,
+        "Median_Cost": 16482.78,
+        "Cost_per_Live_Birth": 45457.77
+      },
+      {
+        "Treatment_Type": "Mild Stimulation IVF",
+        "Cycles": 438,
+        "Transfers": 345,
+        "Implantation_per_ET_Pct": 49.57,
+        "CPR_per_ET_Pct": 44.64,
+        "LBR_per_ET_Pct": 36.81,
+        "CPR_per_Cycle_Pct": 35.16,
+        "LBR_per_Cycle_Pct": 29.0,
+        "Mean_Age": 34.31,
+        "Mean_Cost": 9805.75,
+        "Median_Cost": 9915.1,
+        "Cost_per_Live_Birth": 33818.25
+      }
+    ],
+    "by_embryo_day_et": [
+      {
+        "Best_Embryo_Day": "Day 5",
+        "Cycles": 3662,
+        "Transfers": 3662,
+        "Implantation_per_ET_Pct": 50.14,
+        "CPR_per_ET_Pct": 45.66,
+        "LBR_per_ET_Pct": 38.67,
+        "CPR_per_Cycle_Pct": 45.66,
+        "LBR_per_Cycle_Pct": 38.67,
+        "Mean_Age": 33.56,
+        "Mean_Cost": 13889.24,
+        "Median_Cost": 13745.72,
+        "Cost_per_Live_Birth": 35919.78
+      },
+      {
+        "Best_Embryo_Day": "Day 3",
+        "Cycles": 1010,
+        "Transfers": 1010,
+        "Implantation_per_ET_Pct": 37.72,
+        "CPR_per_ET_Pct": 34.55,
+        "LBR_per_ET_Pct": 29.21,
+        "CPR_per_Cycle_Pct": 34.55,
+        "LBR_per_Cycle_Pct": 29.21,
+        "Mean_Age": 34.34,
+        "Mean_Cost": 13041.63,
+        "Median_Cost": 13225.69,
+        "Cost_per_Live_Birth": 44651.01
+      }
+    ],
+    "by_transfer_type_et": [
+      {
+        "Transfer_Type": "Frozen-Thawed Transfer",
+        "Cycles": 2517,
+        "Transfers": 2517,
+        "Implantation_per_ET_Pct": 48.31,
+        "CPR_per_ET_Pct": 44.18,
+        "LBR_per_ET_Pct": 37.35,
+        "CPR_per_Cycle_Pct": 44.18,
+        "LBR_per_Cycle_Pct": 37.35,
+        "Mean_Age": 33.93,
+        "Mean_Cost": 14417.61,
+        "Median_Cost": 14289.92,
+        "Cost_per_Live_Birth": 38605.45
+      },
+      {
+        "Transfer_Type": "Fresh Transfer",
+        "Cycles": 2155,
+        "Transfers": 2155,
+        "Implantation_per_ET_Pct": 46.45,
+        "CPR_per_ET_Pct": 42.18,
+        "LBR_per_ET_Pct": 35.78,
+        "CPR_per_Cycle_Pct": 42.18,
+        "LBR_per_Cycle_Pct": 35.78,
+        "Mean_Age": 33.48,
+        "Mean_Cost": 12874.86,
+        "Median_Cost": 12980.67,
+        "Cost_per_Live_Birth": 35986.15
+      }
+    ],
+    "by_transfer_strategy_et": [
+      {
+        "Transfer_Strategy": "eSET (1 Embryo)",
+        "Cycles": 3437,
+        "Transfers": 3437,
+        "Implantation_per_ET_Pct": 45.71,
+        "CPR_per_ET_Pct": 41.66,
+        "LBR_per_ET_Pct": 35.61,
+        "CPR_per_Cycle_Pct": 41.66,
+        "LBR_per_Cycle_Pct": 35.61,
+        "Mean_Age": 33.66,
+        "Mean_Cost": 13747.23,
+        "Median_Cost": 13616.34,
+        "Cost_per_Live_Birth": 38602.32
+      },
+      {
+        "Transfer_Strategy": "DET (2 Embryos)",
+        "Cycles": 1135,
+        "Transfers": 1135,
+        "Implantation_per_ET_Pct": 52.69,
+        "CPR_per_ET_Pct": 48.02,
+        "LBR_per_ET_Pct": 39.65,
+        "CPR_per_Cycle_Pct": 48.02,
+        "LBR_per_Cycle_Pct": 39.65,
+        "Mean_Age": 33.84,
+        "Mean_Cost": 13593.76,
+        "Median_Cost": 13523.3,
+        "Cost_per_Live_Birth": 34286.48
+      },
+      {
+        "Transfer_Strategy": "MET (3 Embryos)",
+        "Cycles": 100,
+        "Transfers": 100,
+        "Implantation_per_ET_Pct": 48.0,
+        "CPR_per_ET_Pct": 44.0,
+        "LBR_per_ET_Pct": 37.0,
+        "CPR_per_Cycle_Pct": 44.0,
+        "LBR_per_Cycle_Pct": 37.0,
+        "Mean_Age": 34.51,
+        "Mean_Cost": 13562.97,
+        "Median_Cost": 13856.45,
+        "Cost_per_Live_Birth": 36656.69
+      }
+    ],
+    "by_infertility_type": [
+      {
+        "Infertility_Type": "Primary",
+        "Cycles": 3543,
+        "Transfers": 3139,
+        "Implantation_per_ET_Pct": 48.68,
+        "CPR_per_ET_Pct": 44.5,
+        "LBR_per_ET_Pct": 37.66,
+        "CPR_per_Cycle_Pct": 39.43,
+        "LBR_per_Cycle_Pct": 33.36,
+        "Mean_Age": 33.49,
+        "Mean_Cost": 13415.72,
+        "Median_Cost": 13424.57,
+        "Cost_per_Live_Birth": 40213.11
+      },
+      {
+        "Infertility_Type": "Secondary",
+        "Cycles": 1734,
+        "Transfers": 1533,
+        "Implantation_per_ET_Pct": 44.94,
+        "CPR_per_ET_Pct": 40.7,
+        "LBR_per_ET_Pct": 34.51,
+        "CPR_per_Cycle_Pct": 35.99,
+        "LBR_per_Cycle_Pct": 30.51,
+        "Mean_Age": 34.68,
+        "Mean_Cost": 13489.26,
+        "Median_Cost": 13487.59,
+        "Cost_per_Live_Birth": 44216.22
+      }
+    ],
+    "by_bmi_cat": [
+      {
+        "BMI_Category": "Underweight (<18.5)",
+        "Cycles": 258,
+        "Transfers": 223,
+        "Implantation_per_ET_Pct": 42.6,
+        "CPR_per_ET_Pct": 40.36,
+        "LBR_per_ET_Pct": 35.87,
+        "CPR_per_Cycle_Pct": 34.88,
+        "LBR_per_Cycle_Pct": 31.01,
+        "Mean_Age": 34.27,
+        "Mean_Cost": 13376.91,
+        "Median_Cost": 13495.5,
+        "Cost_per_Live_Birth": 43140.53
+      },
+      {
+        "BMI_Category": "Normal (18.5-24.9)",
+        "Cycles": 2551,
+        "Transfers": 2249,
+        "Implantation_per_ET_Pct": 47.27,
+        "CPR_per_ET_Pct": 43.09,
+        "LBR_per_ET_Pct": 36.15,
+        "CPR_per_Cycle_Pct": 37.99,
+        "LBR_per_Cycle_Pct": 31.87,
+        "Mean_Age": 34.0,
+        "Mean_Cost": 13465.28,
+        "Median_Cost": 13481.95,
+        "Cost_per_Live_Birth": 42250.84
+      },
+      {
+        "BMI_Category": "Overweight (25.0-29.9)",
+        "Cycles": 1771,
+        "Transfers": 1575,
+        "Implantation_per_ET_Pct": 49.27,
+        "CPR_per_ET_Pct": 44.83,
+        "LBR_per_ET_Pct": 38.16,
+        "CPR_per_Cycle_Pct": 39.86,
+        "LBR_per_Cycle_Pct": 33.94,
+        "Mean_Age": 33.77,
+        "Mean_Cost": 13423.72,
+        "Median_Cost": 13360.2,
+        "Cost_per_Live_Birth": 39556.43
+      },
+      {
+        "BMI_Category": "Obese (>=30.0)",
+        "Cycles": 697,
+        "Transfers": 625,
+        "Implantation_per_ET_Pct": 45.28,
+        "CPR_per_ET_Pct": 40.96,
+        "LBR_per_ET_Pct": 34.72,
+        "CPR_per_Cycle_Pct": 36.73,
+        "LBR_per_Cycle_Pct": 31.13,
+        "Mean_Age": 33.57,
+        "Mean_Cost": 13411.33,
+        "Median_Cost": 13485.08,
+        "Cost_per_Live_Birth": 43076.93
+      }
+    ],
+    "by_protocol": [
+      {
+        "Stimulation_Protocol": "Flare-Up Protocol",
+        "Cycles": 343,
+        "Transfers": 297,
+        "Implantation_per_ET_Pct": 47.47,
+        "CPR_per_ET_Pct": 43.1,
+        "LBR_per_ET_Pct": 35.02,
+        "CPR_per_Cycle_Pct": 37.32,
+        "LBR_per_Cycle_Pct": 30.32,
+        "Mean_Age": 34.58,
+        "Mean_Cost": 14467.96,
+        "Median_Cost": 14192.19,
+        "Cost_per_Live_Birth": 47716.45
+      },
+      {
+        "Stimulation_Protocol": "GnRH Agonist Long",
+        "Cycles": 1096,
+        "Transfers": 1010,
+        "Implantation_per_ET_Pct": 48.22,
+        "CPR_per_ET_Pct": 44.65,
+        "LBR_per_ET_Pct": 39.31,
+        "CPR_per_Cycle_Pct": 41.15,
+        "LBR_per_Cycle_Pct": 36.22,
+        "Mean_Age": 33.94,
+        "Mean_Cost": 14202.21,
+        "Median_Cost": 14046.26,
+        "Cost_per_Live_Birth": 39208.1
+      },
+      {
+        "Stimulation_Protocol": "GnRH Antagonist",
+        "Cycles": 3165,
+        "Transfers": 2837,
+        "Implantation_per_ET_Pct": 47.23,
+        "CPR_per_ET_Pct": 43.04,
+        "LBR_per_ET_Pct": 36.27,
+        "CPR_per_Cycle_Pct": 38.58,
+        "LBR_per_Cycle_Pct": 32.51,
+        "Mean_Age": 33.62,
+        "Mean_Cost": 13710.88,
+        "Median_Cost": 13519.44,
+        "Cost_per_Live_Birth": 42171.95
+      },
+      {
+        "Stimulation_Protocol": "Mild / Minimal Stimulation",
+        "Cycles": 673,
+        "Transfers": 528,
+        "Implantation_per_ET_Pct": 47.16,
+        "CPR_per_ET_Pct": 41.86,
+        "LBR_per_ET_Pct": 34.28,
+        "CPR_per_Cycle_Pct": 32.84,
+        "LBR_per_Cycle_Pct": 26.89,
+        "Mean_Age": 34.66,
+        "Mean_Cost": 10400.02,
+        "Median_Cost": 10292.25,
+        "Cost_per_Live_Birth": 38669.69
+      }
+    ],
+    "older_age_ge_38_by_treatment": [
+      {
+        "Treatment_Type": "Conventional IVF",
+        "count": 191,
+        "LBR_ET_Pct": 20.42
+      },
+      {
+        "Treatment_Type": "ICSI",
+        "count": 407,
+        "LBR_ET_Pct": 22.36
+      },
+      {
+        "Treatment_Type": "IVF + PGT-A",
+        "count": 231,
+        "LBR_ET_Pct": 32.03
+      },
+      {
+        "Treatment_Type": "Mild Stimulation IVF",
+        "count": 82,
+        "LBR_ET_Pct": 28.05
+      }
+    ]
+  },
+  "cost_summary": {
+    "Consultation_Cost": {
+      "mean": 611.29,
+      "sd": 94.56,
+      "median": 610.34,
+      "q1": 546.7,
+      "q3": 675.27,
+      "iqr": 128.57,
+      "min": 350.0,
+      "max": 975.36,
+      "share_of_total_spend_pct": 4.55
+    },
+    "Medication_Cost": {
+      "mean": 3690.97,
+      "sd": 983.29,
+      "median": 3812.93,
+      "q1": 3223.92,
+      "q3": 4340.36,
+      "iqr": 1116.44,
+      "min": 950.0,
+      "max": 6783.7,
+      "share_of_total_spend_pct": 27.46
+    },
+    "Laboratory_Cost": {
+      "mean": 4365.88,
+      "sd": 1153.06,
+      "median": 4235.91,
+      "q1": 3492.26,
+      "q3": 4914.35,
+      "iqr": 1422.09,
+      "min": 2100.0,
+      "max": 8058.05,
+      "share_of_total_spend_pct": 32.48
+    },
+    "Procedure_Cost": {
+      "mean": 3798.27,
+      "sd": 650.33,
+      "median": 3912.63,
+      "q1": 3506.98,
+      "q3": 4236.91,
+      "iqr": 729.93,
+      "min": 1750.0,
+      "max": 5600.0,
+      "share_of_total_spend_pct": 28.26
+    },
+    "Additional_Cost": {
+      "mean": 973.47,
+      "sd": 527.9,
+      "median": 948.54,
+      "q1": 590.82,
+      "q3": 1328.82,
+      "iqr": 738.0,
+      "min": 0.0,
+      "max": 2749.06,
+      "share_of_total_spend_pct": 7.24
+    },
+    "Total_Treatment_Cost": {
+      "mean": 13439.89,
+      "sd": 2168.4,
+      "median": 13446.29,
+      "q1": 12124.06,
+      "q3": 14755.6,
+      "iqr": 2631.54,
+      "min": 6278.38,
+      "max": 19871.42,
+      "share_of_total_spend_pct": 100.0
+    },
+    "Clinic_Cost_per_Live_Birth_Overall": 41450.78
+  },
+  "pairwise_correlations": [
+    {
+      "Var_1": "Age",
+      "Var_2": "AMH_Level",
+      "N": 5277,
+      "Pearson_r": -0.4525,
+      "Pearson_p": 1.012117328848254e-264,
+      "Spearman_rho": -0.4431,
+      "Spearman_p": 1.117000816150014e-252
+    },
+    {
+      "Var_1": "AMH_Level",
+      "Var_2": "FSH_Level",
+      "N": 5277,
+      "Pearson_r": -0.4169,
+      "Pearson_p": 5.259558738774375e-221,
+      "Spearman_rho": -0.4228,
+      "Spearman_p": 6.825658557263469e-228
+    },
+    {
+      "Var_1": "AMH_Level",
+      "Var_2": "Retrieved_Oocytes",
+      "N": 5277,
+      "Pearson_r": 0.3656,
+      "Pearson_p": 1.376856297229838e-166,
+      "Spearman_rho": 0.3692,
+      "Spearman_p": 4.647769963098935e-170
+    },
+    {
+      "Var_1": "Age",
+      "Var_2": "Retrieved_Oocytes",
+      "N": 5277,
+      "Pearson_r": -0.3075,
+      "Pearson_p": 5.94174340391281e-116,
+      "Spearman_rho": -0.2996,
+      "Spearman_p": 6.581725422053025e-110
+    },
+    {
+      "Var_1": "Retrieved_Oocytes",
+      "Var_2": "Mature_Oocytes",
+      "N": 5277,
+      "Pearson_r": 0.9193,
+      "Pearson_p": 0.0,
+      "Spearman_rho": 0.9147,
+      "Spearman_p": 0.0
+    },
+    {
+      "Var_1": "Mature_Oocytes",
+      "Var_2": "Number_of_Embryos",
+      "N": 5277,
+      "Pearson_r": 0.7504,
+      "Pearson_p": 0.0,
+      "Spearman_rho": 0.7329,
+      "Spearman_p": 0.0
+    },
+    {
+      "Var_1": "Medication_Cost",
+      "Var_2": "Total_Treatment_Cost",
+      "N": 5277,
+      "Pearson_r": 0.6155,
+      "Pearson_p": 0.0,
+      "Spearman_rho": 0.5621,
+      "Spearman_p": 0.0
+    },
+    {
+      "Var_1": "Laboratory_Cost",
+      "Var_2": "Total_Treatment_Cost",
+      "N": 5277,
+      "Pearson_r": 0.7914,
+      "Pearson_p": 0.0,
+      "Spearman_rho": 0.7663,
+      "Spearman_p": 0.0
+    },
+    {
+      "Var_1": "Best_Quality_Score",
+      "Var_2": "Implanted_Bin",
+      "N": 4672,
+      "Pearson_r": 0.1724,
+      "Pearson_p": 1.6954856284611133e-32,
+      "Spearman_rho": 0.167,
+      "Spearman_p": 1.456288039545976e-30
+    },
+    {
+      "Var_1": "Age",
+      "Var_2": "Live_Birth_Bin",
+      "N": 4672,
+      "Pearson_r": -0.1412,
+      "Pearson_p": 3.1485956925099946e-22,
+      "Spearman_rho": -0.1406,
+      "Spearman_p": 4.502320781561079e-22
+    },
+    {
+      "Var_1": "BMI",
+      "Var_2": "Live_Birth_Bin",
+      "N": 4672,
+      "Pearson_r": 0.0045,
+      "Pearson_p": 0.7589788813191255,
+      "Spearman_rho": 0.0101,
+      "Spearman_p": 0.4913983098442634
+    },
+    {
+      "Var_1": "Consultation_Cost",
+      "Var_2": "Live_Birth_Bin",
+      "N": 4672,
+      "Pearson_r": 0.0072,
+      "Pearson_p": 0.6244996290821527,
+      "Spearman_rho": 0.0079,
+      "Spearman_p": 0.5875491064324712
+    }
+  ],
+  "hypothesis_tests": [
+    {
+      "Test_Name": "Best Transferred Embryo Quality vs Implantation (ET Cycles)",
+      "Method": "Pearson Chi-Square Test of Independence",
+      "Sample_N": 4672,
+      "Statistic": 138.963,
+      "df": 3,
+      "p_value": 6.324218099325906e-30,
+      "Effect_Size_Metric": "Cramer's V",
+      "Effect_Size": 0.1725,
+      "Assumptions_Check": "Independent cycle/transfer observations; minimum expected cell count = 84.5 (>= 5 satisfied).",
+      "Significant_at_0_05": true
+    },
+    {
+      "Test_Name": "Maternal Age Group vs Clinical Pregnancy (ET Cycles)",
+      "Method": "Pearson Chi-Square Test of Independence",
+      "Sample_N": 4672,
+      "Statistic": 76.12,
+      "df": 4,
+      "p_value": 1.1549693271021582e-15,
+      "Effect_Size_Metric": "Cramer's V",
+      "Effect_Size": 0.1276,
+      "Assumptions_Check": "Independent cycle/transfer observations; minimum expected cell count = 136.7 (>= 5 satisfied).",
+      "Significant_at_0_05": true
+    },
+    {
+      "Test_Name": "Maternal Age Group vs Live Birth (Initiated Cycles)",
+      "Method": "Pearson Chi-Square Test of Independence",
+      "Sample_N": 5277,
+      "Statistic": 128.957,
+      "df": 4,
+      "p_value": 6.508175926322832e-27,
+      "Effect_Size_Metric": "Cramer's V",
+      "Effect_Size": 0.1563,
+      "Assumptions_Check": "Independent cycle/transfer observations; minimum expected cell count = 126.1 (>= 5 satisfied).",
+      "Significant_at_0_05": true
+    },
+    {
+      "Test_Name": "Embryo Day (Day 5 vs Day 3) vs Implantation (ET Cycles)",
+      "Method": "Pearson Chi-Square Test of Independence",
+      "Sample_N": 4672,
+      "Statistic": 48.429,
+      "df": 1,
+      "p_value": 3.4253576301285344e-12,
+      "Effect_Size_Metric": "Cramer's V",
+      "Effect_Size": 0.1023,
+      "Assumptions_Check": "Independent cycle/transfer observations; minimum expected cell count = 479.3 (>= 5 satisfied).",
+      "Significant_at_0_05": true
+    },
+    {
+      "Test_Name": "Treatment Type vs Live Birth (Crude / Unadjusted, Initiated Cycles)",
+      "Method": "Pearson Chi-Square Test of Independence",
+      "Sample_N": 5277,
+      "Statistic": 11.294,
+      "df": 3,
+      "p_value": 0.010237198248763383,
+      "Effect_Size_Metric": "Cramer's V",
+      "Effect_Size": 0.0463,
+      "Assumptions_Check": "Independent cycle/transfer observations; minimum expected cell count = 142.0 (>= 5 satisfied).",
+      "Significant_at_0_05": true
+    },
+    {
+      "Test_Name": "Transfer Type (FET vs Fresh) vs Live Birth (ET Cycles)",
+      "Method": "Pearson Chi-Square Test of Independence",
+      "Sample_N": 4672,
+      "Statistic": 1.164,
+      "df": 1,
+      "p_value": 0.2805597535089479,
+      "Effect_Size_Metric": "Cramer's V",
+      "Effect_Size": 0.0162,
+      "Assumptions_Check": "Independent cycle/transfer observations; minimum expected cell count = 789.2 (>= 5 satisfied).",
+      "Significant_at_0_05": false
+    },
+    {
+      "Test_Name": "Infertility Type (Primary vs Secondary) vs Live Birth (ET Cycles)",
+      "Method": "Pearson Chi-Square Test of Independence",
+      "Sample_N": 4672,
+      "Statistic": 4.262,
+      "df": 1,
+      "p_value": 0.038962764380198224,
+      "Effect_Size_Metric": "Cramer's V",
+      "Effect_Size": 0.0307,
+      "Assumptions_Check": "Independent cycle/transfer observations; minimum expected cell count = 561.4 (>= 5 satisfied).",
+      "Significant_at_0_05": true
+    },
+    {
+      "Test_Name": "BMI Category vs Clinical Pregnancy (ET Cycles)",
+      "Method": "Pearson Chi-Square Test of Independence",
+      "Sample_N": 4672,
+      "Statistic": 3.712,
+      "df": 3,
+      "p_value": 0.29430186849982454,
+      "Effect_Size_Metric": "Cramer's V",
+      "Effect_Size": 0.0282,
+      "Assumptions_Check": "Independent cycle/transfer observations; minimum expected cell count = 96.5 (>= 5 satisfied).",
+      "Significant_at_0_05": false
+    },
+    {
+      "Test_Name": "Total Treatment Cost across Treatment Types",
+      "Method": "Kruskal-Wallis H Test (with One-Way ANOVA check)",
+      "Sample_N": 5277,
+      "Statistic": 3040.754,
+      "df": 3,
+      "p_value": 0.0,
+      "Effect_Size_Metric": "Epsilon-squared (eps^2)",
+      "Effect_Size": 0.5763,
+      "Assumptions_Check": "Right-skewed cost distributions & Levene variance test F=0.96 (p=4.088e-01); non-parametric Kruskal-Wallis preferred (ANOVA F=3010.4, p=0.000e+00).",
+      "Significant_at_0_05": true
+    },
+    {
+      "Test_Name": "Retrieved Oocytes across Stimulation Protocols",
+      "Method": "Kruskal-Wallis H Test",
+      "Sample_N": 5277,
+      "Statistic": 497.016,
+      "df": 3,
+      "p_value": 2.1147459535626953e-107,
+      "Effect_Size_Metric": "Epsilon-squared (eps^2)",
+      "Effect_Size": 0.0942,
+      "Assumptions_Check": "Count outcome with positive skewness; non-parametric rank comparison robust to hyper-responder tail.",
+      "Significant_at_0_05": true
+    },
+    {
+      "Test_Name": "Maternal Age: Live Birth Yes vs No (ET Cycles)",
+      "Method": "Welch Two-Sample t-Test & Mann-Whitney U",
+      "Sample_N": 4672,
+      "Statistic": -10.011,
+      "df": 4670,
+      "p_value": 2.604298207666113e-23,
+      "Effect_Size_Metric": "Cohen's d",
+      "Effect_Size": -0.2999,
+      "Assumptions_Check": "Large N=4672 satisfies CLT; Welch t=-10.01 (p=2.604e-23) & Mann-Whitney U p=7.082e-22 concur.",
+      "Significant_at_0_05": true
+    },
+    {
+      "Test_Name": "Consultation Cost: Live Birth Yes vs No (ET Cycles)",
+      "Method": "Welch Two-Sample t-Test",
+      "Sample_N": 4672,
+      "Statistic": 0.491,
+      "df": 4670,
+      "p_value": 0.623735745181889,
+      "Effect_Size_Metric": "Cohen's d",
+      "Effect_Size": 0.0149,
+      "Assumptions_Check": "Continuous approximately normal fee variable; Welch correction applied.",
+      "Significant_at_0_05": false
+    }
+  ],
+  "logistic_regression_et_live_birth": [
+    {
+      "Feature": "Intercept",
+      "Beta": -1.4792,
+      "SE": 0.1245,
+      "Odds_Ratio": 0.228,
+      "OR_CI_Lower": 0.179,
+      "OR_CI_Upper": 0.291,
+      "Wald_Z": -11.886,
+      "p_value": 0.0
+    },
+    {
+      "Feature": "Age_per_5yr",
+      "Beta": -0.2862,
+      "SE": 0.037,
+      "Odds_Ratio": 0.751,
+      "OR_CI_Lower": 0.699,
+      "OR_CI_Upper": 0.808,
+      "Wald_Z": -7.736,
+      "p_value": 1.021405182655144e-14
+    },
+    {
+      "Feature": "Embryo_Excellent_vs_FairPoor",
+      "Beta": 0.7413,
+      "SE": 0.0996,
+      "Odds_Ratio": 2.099,
+      "OR_CI_Lower": 1.727,
+      "OR_CI_Upper": 2.551,
+      "Wald_Z": 7.444,
+      "p_value": 9.747758156208874e-14
+    },
+    {
+      "Feature": "Embryo_Good_vs_FairPoor",
+      "Beta": 0.486,
+      "SE": 0.1038,
+      "Odds_Ratio": 1.626,
+      "OR_CI_Lower": 1.327,
+      "OR_CI_Upper": 1.992,
+      "Wald_Z": 4.684,
+      "p_value": 2.819861991687489e-06
+    },
+    {
+      "Feature": "Day5_vs_Day3",
+      "Beta": 0.3516,
+      "SE": 0.0812,
+      "Odds_Ratio": 1.421,
+      "OR_CI_Lower": 1.212,
+      "OR_CI_Upper": 1.667,
+      "Wald_Z": 4.328,
+      "p_value": 1.5034182983209021e-05
+    },
+    {
+      "Feature": "PGT_A_vs_Conventional",
+      "Beta": 0.2671,
+      "SE": 0.0961,
+      "Odds_Ratio": 1.306,
+      "OR_CI_Lower": 1.082,
+      "OR_CI_Upper": 1.577,
+      "Wald_Z": 2.781,
+      "p_value": 0.0054219297290420965
+    },
+    {
+      "Feature": "ICSI_vs_Conventional",
+      "Beta": 0.0999,
+      "SE": 0.0701,
+      "Odds_Ratio": 1.105,
+      "OR_CI_Lower": 0.963,
+      "OR_CI_Upper": 1.268,
+      "Wald_Z": 1.426,
+      "p_value": 0.15385147899194607
+    },
+    {
+      "Feature": "FET_vs_Fresh",
+      "Beta": 0.0195,
+      "SE": 0.0664,
+      "Odds_Ratio": 1.02,
+      "OR_CI_Lower": 0.895,
+      "OR_CI_Upper": 1.161,
+      "Wald_Z": 0.293,
+      "p_value": 0.7696185068319676
+    },
+    {
+      "Feature": "Multi_Embryo_Transfer_vs_eSET",
+      "Beta": 0.1552,
+      "SE": 0.0707,
+      "Odds_Ratio": 1.168,
+      "OR_CI_Lower": 1.017,
+      "OR_CI_Upper": 1.341,
+      "Wald_Z": 2.196,
+      "p_value": 0.02806781914111567
+    },
+    {
+      "Feature": "Obese_BMI_ge_30",
+      "Beta": -0.1383,
+      "SE": 0.0922,
+      "Odds_Ratio": 0.871,
+      "OR_CI_Lower": 0.727,
+      "OR_CI_Upper": 1.043,
+      "Wald_Z": -1.499,
+      "p_value": 0.1338552594846425
+    },
+    {
+      "Feature": "Previous_IVF_Attempts",
+      "Beta": -0.0738,
+      "SE": 0.0354,
+      "Odds_Ratio": 0.929,
+      "OR_CI_Lower": 0.867,
+      "OR_CI_Upper": 0.996,
+      "Wald_Z": -2.083,
+      "p_value": 0.03723534110064031
+    }
+  ]
+}

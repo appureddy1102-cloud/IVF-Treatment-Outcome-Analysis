@@ -1,0 +1,236 @@
+{
+  "datasets": [
+    {
+      "raw_file": "patients.csv",
+      "clean_file": "cleaned_patients.csv",
+      "raw_rows": 3925,
+      "raw_cols": 9,
+      "missing_before": 281,
+      "duplicates_removed": 25,
+      "invalid_removed": 3,
+      "invalid_corrected_or_imputed": 7,
+      "final_rows": 3897,
+      "final_cols": 12,
+      "missing_after": 0,
+      "notes": "Removed 25 exact duplicate Patient_ID rows and 3 records with impossible maternal ages (-29, 14, 71). Converted 7 impossible BMI/AMH/FSH entries to NaN and applied diagnosis/age-stratified median imputation. Standardized casing/whitespace in Infertility_Type and Medical_History_Category."
+    },
+    {
+      "raw_file": "ivf_treatment_cycles.csv",
+      "clean_file": "cleaned_treatment_cycles.csv",
+      "raw_rows": 5365,
+      "raw_cols": 12,
+      "missing_before": 34,
+      "duplicates_removed": 45,
+      "invalid_removed": 43,
+      "invalid_corrected_or_imputed": 194,
+      "final_rows": 5277,
+      "final_cols": 18,
+      "missing_after": 0,
+      "notes": "Removed 45 duplicate Cycle_ID rows, 11 orphan/invalid-patient FK cycles, 18 biological funnel violations (e.g., Mature > Retrieved or Transferred > Available), and 14 cycles with contradictory clinical outcome cascades. Standardized 160 non-ISO dates to YYYY-MM-DD and imputed 34 missing Stimulation_Protocol values."
+    },
+    {
+      "raw_file": "embryo_grading.csv",
+      "clean_file": "cleaned_embryo_grading.csv",
+      "raw_rows": 17072,
+      "raw_cols": 9,
+      "missing_before": 266,
+      "duplicates_removed": 35,
+      "invalid_removed": 109,
+      "invalid_corrected_or_imputed": 262,
+      "final_rows": 16928,
+      "final_cols": 11,
+      "missing_after": 0,
+      "notes": "Removed 35 duplicate Embryo_ID rows and 109 orphan/excluded-cycle embryo records (5 synthetic orphan Cycle_IDs + embryos belonging to excluded invalid cycles). Deterministically recovered 138 missing ICM grades and 124 missing TE grades on Day 5 blastocysts directly from composite Morphological_Grade strings."
+    },
+    {
+      "raw_file": "implantation_outcomes.csv",
+      "clean_file": "cleaned_implantation_outcomes.csv",
+      "raw_rows": 5340,
+      "raw_cols": 7,
+      "missing_before": 42,
+      "duplicates_removed": 20,
+      "invalid_removed": 43,
+      "invalid_corrected_or_imputed": 42,
+      "final_rows": 5277,
+      "final_cols": 7,
+      "missing_after": 0,
+      "notes": "Removed 20 duplicate Outcome_ID rows, excluded 14 contradictory clinical cascade records (e.g., Live Birth='Yes' with Clinical Pregnancy='No'), aligned 1:1 with valid cycles, standardized status strings, and resolved 42 missing Follow_Up_Status entries."
+    },
+    {
+      "raw_file": "treatment_costs.csv",
+      "clean_file": "cleaned_treatment_costs.csv",
+      "raw_rows": 5338,
+      "raw_cols": 8,
+      "missing_before": 156,
+      "duplicates_removed": 18,
+      "invalid_removed": 43,
+      "invalid_corrected_or_imputed": 332,
+      "final_rows": 5277,
+      "final_cols": 12,
+      "missing_after": 0,
+      "notes": "Removed 18 duplicate Cost_ID rows, aligned 1:1 with valid cycles, corrected 4 negative sign-entry errors in Consultation_Cost, imputed 44 missing Medication_Cost and 111 missing Additional_Cost values via protocol/modality medians, and reconciled 173 Total_Treatment_Cost sum discrepancies."
+    }
+  ],
+  "profiling_before": [
+    {
+      "Dataset": "patients.csv",
+      "Raw_Rows": 3925,
+      "Raw_Cols": 9,
+      "Primary_Key": "Patient_ID",
+      "Unique_PKs": 3900,
+      "Exact_Duplicates": 25,
+      "PK_Duplicates": 25,
+      "Total_Missing_Cells": 281,
+      "Missing_By_Column": {
+        "BMI": 67,
+        "Infertility_Duration_Years": 52,
+        "AMH_Level": 86,
+        "FSH_Level": 76
+      },
+      "Numerical_Columns": [
+        "Age",
+        "BMI",
+        "Infertility_Duration_Years",
+        "Previous_IVF_Attempts",
+        "AMH_Level",
+        "FSH_Level"
+      ],
+      "Categorical_Columns": [
+        "Patient_ID",
+        "Infertility_Type",
+        "Medical_History_Category"
+      ]
+    },
+    {
+      "Dataset": "ivf_treatment_cycles.csv",
+      "Raw_Rows": 5365,
+      "Raw_Cols": 12,
+      "Primary_Key": "Cycle_ID",
+      "Unique_PKs": 5320,
+      "Exact_Duplicates": 45,
+      "PK_Duplicates": 45,
+      "Total_Missing_Cells": 34,
+      "Missing_By_Column": {
+        "Stimulation_Protocol": 34
+      },
+      "Numerical_Columns": [
+        "Retrieved_Oocytes",
+        "Mature_Oocytes",
+        "Fertilized_Oocytes",
+        "Number_of_Embryos",
+        "Number_of_Embryos_Transferred"
+      ],
+      "Categorical_Columns": [
+        "Cycle_ID",
+        "Patient_ID",
+        "Treatment_Date",
+        "Treatment_Type",
+        "Stimulation_Protocol",
+        "Fertilization_Method",
+        "Transfer_Type"
+      ]
+    },
+    {
+      "Dataset": "embryo_grading.csv",
+      "Raw_Rows": 17072,
+      "Raw_Cols": 9,
+      "Primary_Key": "Embryo_ID",
+      "Unique_PKs": 17037,
+      "Exact_Duplicates": 35,
+      "PK_Duplicates": 35,
+      "Total_Missing_Cells": 266,
+      "Missing_By_Column": {
+        "Inner_Cell_Mass_Grade": 141,
+        "Trophectoderm_Grade": 125
+      },
+      "Numerical_Columns": [],
+      "Categorical_Columns": [
+        "Embryo_ID",
+        "Cycle_ID",
+        "Embryo_Day",
+        "Embryo_Stage",
+        "Expansion_Grade",
+        "Inner_Cell_Mass_Grade",
+        "Trophectoderm_Grade",
+        "Embryo_Quality_Category",
+        "Morphological_Grade"
+      ]
+    },
+    {
+      "Dataset": "implantation_outcomes.csv",
+      "Raw_Rows": 5340,
+      "Raw_Cols": 7,
+      "Primary_Key": "Outcome_ID",
+      "Unique_PKs": 5320,
+      "Exact_Duplicates": 20,
+      "PK_Duplicates": 20,
+      "Total_Missing_Cells": 42,
+      "Missing_By_Column": {
+        "Follow_Up_Status": 42
+      },
+      "Numerical_Columns": [],
+      "Categorical_Columns": [
+        "Outcome_ID",
+        "Cycle_ID",
+        "Implantation_Status",
+        "Pregnancy_Test_Result",
+        "Clinical_Pregnancy_Status",
+        "Live_Birth_Status",
+        "Follow_Up_Status"
+      ]
+    },
+    {
+      "Dataset": "treatment_costs.csv",
+      "Raw_Rows": 5338,
+      "Raw_Cols": 8,
+      "Primary_Key": "Cost_ID",
+      "Unique_PKs": 5320,
+      "Exact_Duplicates": 18,
+      "PK_Duplicates": 18,
+      "Total_Missing_Cells": 156,
+      "Missing_By_Column": {
+        "Medication_Cost": 44,
+        "Additional_Cost": 112
+      },
+      "Numerical_Columns": [
+        "Consultation_Cost",
+        "Medication_Cost",
+        "Laboratory_Cost",
+        "Procedure_Cost",
+        "Additional_Cost",
+        "Total_Treatment_Cost"
+      ],
+      "Categorical_Columns": [
+        "Cost_ID",
+        "Cycle_ID"
+      ]
+    }
+  ],
+  "orphan_checks_raw": {
+    "orphan_cycles_patient_fk": 8,
+    "orphan_embryos_cycle_fk": 5,
+    "orphan_outcomes_cycle_fk": 0,
+    "orphan_costs_cycle_fk": 0
+  },
+  "specific_counts": {
+    "pt_dup_removed": 25,
+    "n_invalid_age_removed": 3,
+    "n_invalid_biomarkers_nullified": 7,
+    "cyc_dup_removed": 45,
+    "n_fk_invalid_cycles": 11,
+    "n_logic_bad_cycles": 18,
+    "n_contradictory_outcomes": 14,
+    "n_missing_sp_imputed": 34,
+    "emb_dup_removed": 35,
+    "emb_fk_removed": 109,
+    "n_icm_missing": 138,
+    "n_te_missing": 124,
+    "out_dup_removed": 20,
+    "n_missing_followup": 42,
+    "cost_dup_removed": 18,
+    "n_neg_costs_fixed": 4,
+    "n_med_cost_imputed": 44,
+    "n_add_cost_imputed": 111,
+    "n_sum_reconciled": 173
+  }
+}
